@@ -1,442 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Protfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Shidu Ren</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Shidu Ren</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="profile__pic-container">
-            <img src="./assets/Ryan-Ren.jpg" alt="Ryan Ren Profile picture">
-        </div>
-        
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Shidu(Ryan) Ren</h1>
-            <p class="section__text__p2">A passionate ECE Student</p>
-            <div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shidu (Ryan) Ren is a University of Toronto engineer and AI researcher seeking Fall 2028 CS PhD opportunities in machine learning, speech BCI, audio intelligence, and trustworthy AI systems."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>Shidu (Ryan) Ren | AI Research Portfolio</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' text-anchor='middle' fill='white'%3ESR%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Shidu Ryan Ren home">
+          <span class="brand-glyph">SR</span>
+          <span class="brand-name">Shidu Ren</span>
+        </a>
 
-              <div id="socials-container">
-                <img
-                  src="./assets/linkedin.png"
-                  alt="My LinkedIn profile"
-                  class="icon"
-                  onclick="location.href='https://www.linkedin.com/in/shidu-ren-995720296/'"
-                />
-                <img
-                  src="./assets/github.png"
-                  alt="My Github profile"
-                  class="icon"
-                  onclick="location.href='https://github.com/Ryan-Ren0330'"
-                 />
-            </div>
-            <br>
-            <div class="btn-container">
-                <button
-                class="btn btn-color-2"
-                onclick="window.open('./assets/Shidu(Ryan)_Ren.pdf')"
-              >
-                Resume
-              </button>
-              <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                Contact Info
-              </button> 
-              <button class="btn btn-color-2" onclick="window.open('./assets/Ryan-Ren-Transcript.pdf')">
-                Transcript
-              </button>
-              
-            </div>
-            <br>
-            
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/about1.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="site-menu">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">AI research · speech BCI · audio intelligence</p>
+          <h1>Shidu (Ryan) Ren</h1>
+          <p class="hero-statement">
+            Building research-grade machine learning systems for signals,
+            uncertainty, and human-centered intelligence.
+          </p>
+          <p class="hero-intent">
+            Seeking Fall 2028 CS PhD opportunities.
+          </p>
+
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-light" href="#projects">Selected work</a>
+            <a class="button button-outline" href="./assets/Shidu(Ryan)_Ren.pdf" target="_blank" rel="noreferrer">Resume</a>
           </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./assets/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p>2+ years of hands-on coding with C++/Python/Java.... <br />Machine Learning Research Intern</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>2nd Year B.Sc. in Computer Engineering <br />University of Toronto St. George Campus
-                </p>
-              </div>
-            </div>
-            <div class="text-container">
+        </div>
+
+        <aside class="hero-meta" aria-label="Current profile">
+          <div>
+            <span>Current focus</span>
+            <strong>AI research at Memories.ai</strong>
+          </div>
+          <div>
+            <span>Research direction</span>
+            <strong>speech BCI, audio ML, trustworthy AI</strong>
+          </div>
+          <div>
+            <span>Base</span>
+            <strong>University of Toronto · Toronto</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section class="opening-strip" aria-label="Brief profile">
+        <p>
+          I work across machine learning research, signal processing, and
+          systems prototyping, with a taste for projects where beautiful models
+          have to survive noisy data, uncertain labels, and real constraints.
+        </p>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="section-label">
+          <span>01</span>
+          <p>Research identity</p>
+        </div>
+
+        <div class="research-grid">
+          <div class="section-title">
+            <h2>From raw signals to reliable intelligence.</h2>
+          </div>
+
+          <div class="research-copy">
+            <p>
+              My research interests sit at the intersection of machine
+              learning, speech brain-computer interfaces, audio understanding,
+              and uncertainty-aware systems. I am especially drawn to problems
+              where data is imperfect but the downstream decision still has to
+              be useful, interpretable, and robust.
+            </p>
+            <p>
+              Recent work includes robust bird species identification from
+              rainforest soundscapes, speech BCI baselines, EEG feature
+              generation, and an uncertainty-aware data labeling tool with
+              UTMIST and Themis AI.
+            </p>
+          </div>
+        </div>
+
+        <div class="research-lanes" aria-label="Research interests">
+          <article>
+            <span>Signal learning</span>
+            <h3>Speech BCI and EEG modeling</h3>
+            <p>
+              Building pipelines for noisy neural and speech-related signals,
+              with emphasis on evaluation, features, and reproducibility.
+            </p>
+          </article>
+          <article>
+            <span>Audio intelligence</span>
+            <h3>Ecological and acoustic ML</h3>
+            <p>
+              Modeling real-world soundscapes where class imbalance, noise,
+              and domain shift shape the research problem.
+            </p>
+          </article>
+          <article>
+            <span>Trustworthy AI</span>
+            <h3>Uncertainty-aware tools</h3>
+            <p>
+              Exploring human-in-the-loop systems that make model uncertainty
+              visible and useful for better annotation and decision-making.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-label">
+          <span>02</span>
+          <p>Experience</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Current</div>
+            <div class="timeline-body">
+              <h2>AI Research · Memories.ai</h2>
               <p>
-                I'm a second-year Computer Engineering student fueled by a passion for software development and machine learning. 
-                During my software development internship, I built a metro passenger simulation in Java, sharpening my coding and problem-solving skills. 
-                I've also used PyTorch for advanced ML tasks, and my strong placement in a Kaggle AI competition further honed my data science abilities. 
-                I'm eager to explore new directions in robotics, embedded systems, and beyond.
+                Working on AI research problems connected to real-world signal
+                understanding, with recent emphasis on robust bird species
+                identification from rainforest soundscapes.
               </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Languages</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML/CSS</h3>
-                    <p>Intermidiate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Java</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Python</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>C/C++</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Verilog</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
+              <div class="tag-list">
+                <span>Audio ML</span>
+                <span>Signal processing</span>
+                <span>Robust evaluation</span>
               </div>
             </div>
+          </article>
 
-            <div class="details-container">
-              <h2 class="experience-sub-title">Tools</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PyTorch</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Git</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>React</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Unity</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>STL</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>SQL</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
+          <article class="timeline-item">
+            <div class="timeline-date">ML Developer</div>
+            <div class="timeline-body">
+              <h2>Themis AI × UTMIST</h2>
+              <p>
+                Contributing to a next-generation data labeling tool powered
+                by uncertainty-aware AI, connecting research ideas with usable
+                machine learning infrastructure.
+              </p>
+              <div class="tag-list">
+                <span>Trustworthy AI</span>
+                <span>Uncertainty</span>
+                <span>Tooling</span>
               </div>
             </div>
-            
-          </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Education</div>
+            <div class="timeline-body">
+              <h2>University of Toronto</h2>
+              <p>
+                Computer Engineering, 2T7 + PEY. Academic background across
+                software systems, digital hardware, algorithms, and machine
+                learning.
+              </p>
+              <div class="tag-list">
+                <span>GPA 3.83/4.0</span>
+                <span>ECE</span>
+                <span>Research trajectory</span>
+              </div>
+            </div>
+          </article>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#projects'"
-        />
       </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <!-- <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/website.jpg"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Personal Website</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Ryan-Ren0330/Ryan-Ren-personal-website'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://shidu-ren.netlify.app'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div> -->
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/contactsystem3.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-                <!-- <img
-                  src="./assets/contactsystem2.png"
-                  alt="Project 1"
-                  class="project-img"
-                /> -->
-              </div>
-              <h2 class="experience-sub-title project-title">Wildfire Communication System </h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Ken-2511/utek_disaster_communication_system'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://drive.google.com/file/d/1eN1rLR0YZfZVHFpBl3DLPqOq8t8iRGNS/view?usp=sharing'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/kaggle.jpg"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Kaggle AI Competition</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/NZHGREALISH/Binary-Classification-of-Insurance-Cross-Selling'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.kaggle.com/competitions/playground-series-s4e7/leaderboard'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/badminton.jpg"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">FPGA <br>Stickman Badminton</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Ryan-Ren0330/StickManBadminton-on-FPGA'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://docs.google.com/presentation/d/1zoz6aC_Ih6Uw6YF6MzBEiaykrYxHg3aTIHqkL9wZQng/edit#slide=id.g31a09ae4368_0_10'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-label">
+          <span>03</span>
+          <p>Selected work</p>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
-      </section>    
-      <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:ryan.ren@mail.utoronto.ca">ryan.ren@mail.utoronto.ca</a></p>
+
+        <div class="project-intro">
+          <h2>Projects as small research systems.</h2>
+          <p>
+            Each project is selected for a different kind of constraint: noisy
+            audio, neural signals, hardware timing, uncertainty, or human
+            usability.
+          </p>
+        </div>
+
+        <article class="featured-project">
+          <div class="featured-media">
+            <img src="./assets/contactsystem3.png" alt="Wildfire communication system interface" />
           </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/shidu-ren-995720296/">LinkedIn</a></p>
+          <div class="featured-copy">
+            <span class="project-type">Emergency systems · prototype</span>
+            <h3>Wildfire Communication System</h3>
+            <p>
+              A disaster communication prototype for situations where normal
+              infrastructure is degraded. The project frames engineering as a
+              reliability problem: usable interfaces, constrained systems, and
+              practical recovery under pressure.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Ryan-Ren0330/utek_disaster_communication_system" target="_blank" rel="noreferrer">Code</a>
+              <a href="https://drive.google.com/file/d/1eN1rLR0YZfZVHFpBl3DLPqOq8t8iRGNS/view?usp=sharing" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="./assets/kaggle.jpg" alt="Kaggle competition visual" />
+            <div>
+              <span class="project-type">Audio ML · research</span>
+              <h3>BirdCLEF 2025 Bronze Solution</h3>
+              <p>
+                Bird species classification from real-world rainforest
+                soundscapes using machine learning and signal processing.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/BirdCLEF2025-Bronze-Solution" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/badminton.jpg" alt="FPGA stickman badminton visual" />
+            <div>
+              <span class="project-type">FPGA · digital systems</span>
+              <h3>StickMan Badminton on FPGA</h3>
+              <p>
+                A Verilog game implementation that turns gameplay, timing, and
+                display logic into constrained digital hardware.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/StickManBadminton-on-FPGA" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+
+          <article class="project-card text-only">
+            <div>
+              <span class="project-type">Speech BCI · baselines</span>
+              <h3>speechBCIbaseline</h3>
+              <p>
+                Baseline code and evaluation structure for speech BCI work,
+                focused on reproducible modeling from complex signals.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/speechBCIbaseline" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+
+          <article class="project-card text-only">
+            <div>
+              <span class="project-type">Features · EEG</span>
+              <h3>eeg-feature-generation</h3>
+              <p>
+                Feature generation work for EEG pipelines, supporting the
+                bridge from raw signal data to model-ready representations.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/eeg-feature-generation" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+
+          <article class="project-card text-only">
+            <div>
+              <span class="project-type">Accessible systems</span>
+              <h3>Accessible Navigation</h3>
+              <p>
+                Human-centered navigation work exploring how software can make
+                physical environments easier to move through.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/Accessible-Navigation" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+
+          <article class="project-card text-only">
+            <div>
+              <span class="project-type">FPGA · interaction</span>
+              <h3>WaveDash FPGA</h3>
+              <p>
+                A hardware game project exploring responsive interaction,
+                display behavior, and digital logic under real constraints.
+              </p>
+              <a href="https://github.com/Ryan-Ren0330/WaveDash-FPGA" target="_blank" rel="noreferrer">Open project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-label">
+          <span>04</span>
+          <p>Contact</p>
+        </div>
+
+        <div class="contact-layout">
+          <h2>Looking for PhD conversations, research collaborations, and serious ML systems work.</h2>
+          <div class="contact-copy">
+            <p>
+              I am preparing for Fall 2028 CS PhD applications and would love
+              to connect with labs working on machine learning for speech,
+              neural signals, audio understanding, trustworthy AI, and
+              human-centered intelligent systems.
+            </p>
+            <div class="contact-actions">
+              <a class="button button-dark" href="mailto:ryan.ren@mail.utoronto.ca">Email</a>
+              <a class="button button-muted" href="https://www.linkedin.com/in/shidu-ren-995720296/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button button-muted" href="https://github.com/Ryan-Ren0330" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
           </div>
         </div>
       </section>
-    <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 Shidu Ren. All Rights Reserved.</p>
-      </footer>
+    </main>
+
+    <footer class="site-footer">
+      <p>Shidu (Ryan) Ren</p>
+      <p>AI research portfolio · GitHub Pages</p>
+    </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
