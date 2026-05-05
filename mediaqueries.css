@@ -5,20 +5,8 @@
       linear-gradient(0deg, rgba(8, 8, 8, 0.72), rgba(8, 8, 8, 0.08) 48%);
   }
 
-  .hero,
-  .hero-meta,
-  .section-intro,
-  .kaggle-project,
-  .contact-layout {
-    grid-template-columns: 1fr;
-  }
-
   .experience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .photo-strip {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -69,6 +57,7 @@
   }
 
   .hero {
+    grid-template-columns: 1fr;
     min-height: 78svh;
     padding: 92px 18px 30px;
   }
@@ -81,7 +70,14 @@
 
   .hero-meta {
     gap: 14px;
+    grid-template-columns: 1fr;
     margin-top: 32px;
+  }
+
+  .section-intro,
+  .kaggle-project,
+  .contact-layout {
+    grid-template-columns: 1fr;
   }
 
   .opening-strip,
