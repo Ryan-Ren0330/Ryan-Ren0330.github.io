@@ -455,11 +455,19 @@ a {
   font-size: clamp(2.4rem, 5.2vw, 5.7rem);
 }
 
-.paper-copy > p:not(.paper-venue) {
+.paper-copy > p:not(.paper-venue):not(.paper-authors) {
   color: var(--muted);
   font-size: clamp(1rem, 1.5vw, 1.18rem);
   margin-top: 26px;
   max-width: 760px;
+}
+
+.paper-authors {
+  color: var(--muted);
+  font-size: clamp(0.9rem, 1.16vw, 1rem);
+  line-height: 1.65;
+  margin-top: 22px;
+  max-width: 880px;
 }
 
 .paper-links {
