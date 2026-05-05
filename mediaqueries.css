@@ -14,17 +14,6 @@
     grid-template-columns: 1fr;
   }
 
-  .paper-facts {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .paper-facts div + div {
-    border-left: 1px solid var(--line);
-    border-top: 0;
-  }
-
   .paper-figure {
     border-bottom: 1px solid var(--line);
     border-right: 0;
@@ -121,15 +110,6 @@
     grid-column: auto;
   }
 
-  .paper-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .paper-facts div + div {
-    border-left: 0;
-    border-top: 1px solid var(--line);
-    padding-left: 0;
-  }
 }
 
 @media screen and (max-width: 560px) {
@@ -171,7 +151,6 @@
   .experience-card,
   .paper-figure,
   .paper-copy,
-  .paper-facts div,
   .project-copy,
   .score-panel,
   .score-grid div {
