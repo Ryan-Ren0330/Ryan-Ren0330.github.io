@@ -86,7 +86,8 @@
   }
 
   .photo-strip,
-  .experience-grid {
+  .experience-grid,
+  .education-card {
     grid-template-columns: 1fr;
   }
 
@@ -142,12 +143,14 @@
 
   .section-intro h2,
   .paper-copy h3,
+  .education-card h2,
   .project-copy h2,
   .contact-layout h2 {
     font-size: clamp(2.25rem, 11.5vw, 3.6rem);
   }
 
   .experience-card,
+  .education-card,
   .paper-figure,
   .paper-copy,
   .project-copy,
