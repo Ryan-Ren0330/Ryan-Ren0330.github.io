@@ -8,15 +8,9 @@
   .hero,
   .hero-meta,
   .section-intro,
-  .paper-feature,
   .kaggle-project,
   .contact-layout {
     grid-template-columns: 1fr;
-  }
-
-  .paper-figure {
-    border-bottom: 1px solid var(--line);
-    border-right: 0;
   }
 
   .experience-grid {
@@ -135,6 +129,15 @@
 
   .hero-meta {
     grid-template-columns: 1fr;
+  }
+
+  .paper-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-figure {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
   }
 
   .opening-strip p {
