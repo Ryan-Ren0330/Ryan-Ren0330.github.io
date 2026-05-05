@@ -542,6 +542,14 @@ a {
   overflow-wrap: break-word;
 }
 
+.experience-card a {
+  border-bottom: 1px solid rgba(16, 16, 16, 0.28);
+}
+
+.experience-card a:hover {
+  border-color: currentColor;
+}
+
 .experience-card p:last-child {
   color: var(--muted);
   margin-top: 18px;
