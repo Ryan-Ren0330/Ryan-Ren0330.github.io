@@ -1,10 +1,11 @@
 @media screen and (max-width: 1180px) {
   .hero-shade {
     background:
-      linear-gradient(90deg, rgba(8, 8, 8, 0.9), rgba(8, 8, 8, 0.56)),
+      linear-gradient(90deg, rgba(8, 8, 8, 0.62), rgba(8, 8, 8, 0.24)),
       linear-gradient(0deg, rgba(8, 8, 8, 0.72), rgba(8, 8, 8, 0.08) 48%);
   }
 
+  .hero,
   .hero-meta,
   .section-intro,
   .kaggle-project,
@@ -17,12 +18,7 @@
   }
 
   .photo-strip {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .photo-strip figure:nth-child(3) {
-    grid-column: span 2;
-    aspect-ratio: 16 / 7;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -77,8 +73,9 @@
     padding: 104px 18px 34px;
   }
 
-  .hero-image {
-    background-position: center 70%;
+  .hero-avatar {
+    justify-self: start;
+    max-width: min(100%, 360px);
   }
 
   .hero-meta {
@@ -97,8 +94,7 @@
   }
 
   .photo-strip figure,
-  .photo-strip figure:nth-child(2),
-  .photo-strip figure:nth-child(3) {
+  .photo-strip figure:nth-child(2) {
     aspect-ratio: 4 / 3;
     grid-column: auto;
   }

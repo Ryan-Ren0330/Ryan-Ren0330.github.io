@@ -161,8 +161,14 @@ a {
 
 .hero {
   align-items: end;
+  background:
+    radial-gradient(circle at 76% 28%, rgba(201, 21, 88, 0.34), transparent 34%),
+    radial-gradient(circle at 14% 76%, rgba(40, 79, 71, 0.36), transparent 30%),
+    var(--ink);
   color: var(--white);
   display: grid;
+  gap: clamp(36px, 6vw, 92px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
   min-height: 90svh;
   overflow: hidden;
   padding: 120px clamp(20px, 6vw, 88px) 52px;
@@ -176,21 +182,20 @@ a {
 }
 
 .hero-image {
-  background-image: url("./assets/profile-raptors.jpg");
-  background-position: center 58%;
-  background-size: cover;
-  filter: saturate(1.04) contrast(1.02);
-  transform: scale(1.015);
+  background:
+    linear-gradient(115deg, rgba(255, 255, 255, 0.06), transparent 38%),
+    linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.04));
 }
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(8, 8, 8, 0.9), rgba(8, 8, 8, 0.58) 44%, rgba(8, 8, 8, 0.14)),
-    linear-gradient(0deg, rgba(8, 8, 8, 0.74), rgba(8, 8, 8, 0.06) 50%);
+    linear-gradient(90deg, rgba(8, 8, 8, 0.54), rgba(8, 8, 8, 0.16)),
+    linear-gradient(0deg, rgba(8, 8, 8, 0.4), rgba(8, 8, 8, 0.02) 50%);
 }
 
 .hero-content,
-.hero-meta {
+.hero-meta,
+.hero-avatar {
   position: relative;
   z-index: 2;
 }
@@ -246,6 +251,24 @@ a {
   margin-top: 34px;
 }
 
+.hero-avatar {
+  align-self: center;
+  aspect-ratio: 4 / 5;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  justify-self: end;
+  max-width: 420px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-avatar img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center 44%;
+  width: 100%;
+}
+
 .button {
   align-items: center;
   border: 1px solid transparent;
@@ -286,6 +309,7 @@ a {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
   display: grid;
   gap: 18px;
+  grid-column: 1 / -1;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 70px;
   padding-top: 24px;
@@ -312,17 +336,17 @@ a {
   background: var(--ink);
   display: grid;
   gap: 1px;
-  grid-template-columns: 0.8fr 1.2fr 1fr;
+  grid-template-columns: 1.15fr 0.85fr;
 }
 
 .photo-strip figure {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 10;
   background: var(--ink);
   overflow: hidden;
 }
 
 .photo-strip figure:nth-child(2) {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 5;
 }
 
 .photo-strip img {
@@ -332,15 +356,11 @@ a {
 }
 
 .photo-strip figure:first-child img {
-  object-position: center 42%;
-}
-
-.photo-strip figure:nth-child(2) img {
   object-position: center 62%;
 }
 
-.photo-strip figure:nth-child(3) img {
-  object-position: center 64%;
+.photo-strip figure:nth-child(2) img {
+  object-position: center 54%;
 }
 
 .opening-strip {
