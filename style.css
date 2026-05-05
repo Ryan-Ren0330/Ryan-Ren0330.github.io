@@ -208,8 +208,8 @@ a {
 .section-label p,
 .experience-time,
 .project-type,
-.site-footer,
-.experience-number {
+.paper-venue,
+.site-footer {
   font-size: 0.76rem;
   font-weight: 850;
   letter-spacing: 0;
@@ -415,6 +415,7 @@ a {
 }
 
 .section-intro h2,
+.paper-copy h3,
 .project-copy h2,
 .contact-layout h2 {
   font-family: var(--serif);
@@ -429,6 +430,66 @@ a {
   align-self: end;
   color: var(--muted);
   font-size: clamp(1rem, 1.45vw, 1.16rem);
+}
+
+.paper-section {
+  background: var(--white);
+}
+
+.paper-feature {
+  border: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.34fr);
+}
+
+.paper-copy {
+  padding: clamp(30px, 6vw, 74px);
+}
+
+.paper-venue {
+  color: var(--raspberry);
+  margin-bottom: 24px;
+}
+
+.paper-copy h3 {
+  font-size: clamp(2.4rem, 5.2vw, 5.7rem);
+}
+
+.paper-copy > p:not(.paper-venue) {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  margin-top: 26px;
+  max-width: 760px;
+}
+
+.paper-facts {
+  border-left: 1px solid var(--line);
+  display: grid;
+}
+
+.paper-facts div {
+  align-content: end;
+  display: grid;
+  min-height: 180px;
+  padding: 28px;
+}
+
+.paper-facts div + div {
+  border-top: 1px solid var(--line);
+}
+
+.paper-facts dt {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.paper-facts dd {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.3vw, 3.2rem);
+  line-height: 0.98;
+  margin-top: 10px;
 }
 
 .experience-grid {
@@ -452,14 +513,9 @@ a {
   grid-column: span 2;
 }
 
-.experience-number {
-  color: var(--raspberry);
-}
-
 .experience-time {
   align-self: start;
   color: var(--muted);
-  margin-top: 32px;
 }
 
 .experience-card h3 {
