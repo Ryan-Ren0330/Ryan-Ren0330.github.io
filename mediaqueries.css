@@ -75,7 +75,8 @@
 
   .hero-avatar {
     justify-self: start;
-    max-width: min(100%, 280px);
+    margin-top: 0;
+    max-width: 132px;
   }
 
   .hero-meta {
