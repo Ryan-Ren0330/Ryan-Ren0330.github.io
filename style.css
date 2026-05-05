@@ -168,7 +168,7 @@ a {
   color: var(--white);
   display: grid;
   gap: clamp(36px, 6vw, 92px);
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
   min-height: 90svh;
   overflow: hidden;
   padding: 120px clamp(20px, 6vw, 88px) 52px;
@@ -257,7 +257,7 @@ a {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.24);
   justify-self: end;
-  max-width: 420px;
+  max-width: 320px;
   overflow: hidden;
   width: 100%;
 }
