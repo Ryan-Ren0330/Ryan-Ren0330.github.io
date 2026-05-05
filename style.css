@@ -167,11 +167,11 @@ a {
     var(--ink);
   color: var(--white);
   display: grid;
-  gap: clamp(28px, 5vw, 72px);
+  gap: clamp(22px, 4vw, 52px);
   grid-template-columns: minmax(0, 1fr) auto;
-  min-height: 90svh;
+  min-height: 82svh;
   overflow: hidden;
-  padding: 120px clamp(20px, 6vw, 88px) 52px;
+  padding: 110px clamp(20px, 6vw, 88px) 42px;
   position: relative;
 }
 
@@ -222,7 +222,7 @@ a {
 
 .hero h1 {
   font-family: var(--serif);
-  font-size: clamp(4rem, 11vw, 10rem);
+  font-size: clamp(4rem, 9.2vw, 8.8rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.88;
@@ -230,9 +230,9 @@ a {
 
 .hero-statement {
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1.08rem, 2.2vw, 1.62rem);
+  font-size: clamp(1.06rem, 1.78vw, 1.42rem);
   line-height: 1.45;
-  margin-top: 28px;
+  margin-top: 24px;
   max-width: 740px;
 }
 
@@ -248,7 +248,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 34px;
+  margin-top: 28px;
 }
 
 .hero-avatar {
@@ -259,8 +259,8 @@ a {
   border-radius: 999px;
   box-shadow: 0 24px 90px rgba(201, 21, 88, 0.18);
   justify-self: end;
-  margin-top: 58px;
-  max-width: 168px;
+  margin-top: 44px;
+  max-width: 150px;
   overflow: hidden;
   width: 100%;
 }
@@ -314,8 +314,8 @@ a {
   gap: 18px;
   grid-column: 1 / -1;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 70px;
-  padding-top: 24px;
+  margin-top: 46px;
+  padding-top: 20px;
   width: min(100%, 1100px);
 }
 
@@ -343,13 +343,13 @@ a {
 }
 
 .photo-strip figure {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 6.4;
   background: var(--ink);
   overflow: hidden;
 }
 
 .photo-strip figure:nth-child(2) {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3.5;
 }
 
 .photo-strip img {
@@ -368,18 +368,18 @@ a {
 
 .opening-strip {
   border-bottom: 1px solid var(--line);
-  padding: clamp(48px, 8vw, 100px) clamp(20px, 8vw, 124px);
+  padding: clamp(42px, 6vw, 76px) clamp(20px, 8vw, 124px);
 }
 
 .opening-strip p {
   font-family: var(--serif);
-  font-size: clamp(1.9rem, 5.4vw, 6rem);
+  font-size: clamp(1.8rem, 4.2vw, 4.8rem);
   line-height: 1.02;
   max-width: 1180px;
 }
 
 .section {
-  padding: clamp(72px, 10vw, 148px) clamp(20px, 6vw, 88px);
+  padding: clamp(56px, 7vw, 104px) clamp(20px, 6vw, 88px);
 }
 
 .section-label {
@@ -387,8 +387,8 @@ a {
   border-top: 1px solid var(--line);
   display: flex;
   gap: 16px;
-  margin-bottom: clamp(34px, 5vw, 70px);
-  padding-top: 18px;
+  margin-bottom: clamp(26px, 4vw, 48px);
+  padding-top: 16px;
 }
 
 .section-label span {
@@ -409,9 +409,9 @@ a {
 
 .section-intro {
   display: grid;
-  gap: clamp(22px, 5vw, 80px);
+  gap: clamp(20px, 4vw, 58px);
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
-  margin-bottom: clamp(34px, 6vw, 74px);
+  margin-bottom: clamp(28px, 4.8vw, 54px);
 }
 
 .section-intro h2,
@@ -419,7 +419,7 @@ a {
 .project-copy h2,
 .contact-layout h2 {
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 6vw, 6.2rem);
+  font-size: clamp(2.25rem, 4.8vw, 4.9rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 0.98;
@@ -517,8 +517,8 @@ a {
   background: var(--white);
   border: 1px solid var(--line);
   display: grid;
-  min-height: 330px;
-  padding: clamp(22px, 3vw, 34px);
+  min-height: 260px;
+  padding: clamp(20px, 2.5vw, 28px);
 }
 
 .experience-card.feature {
@@ -536,7 +536,7 @@ a {
 .experience-card h3 {
   align-self: end;
   font-family: var(--serif);
-  font-size: clamp(1.65rem, 2.8vw, 3rem);
+  font-size: clamp(1.45rem, 2.25vw, 2.42rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.02;
@@ -575,19 +575,19 @@ a {
 }
 
 .project-copy {
-  padding: clamp(30px, 6vw, 74px);
+  padding: clamp(28px, 4.8vw, 58px);
 }
 
 .project-type {
   color: #ff77aa;
   display: inline-block;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .project-copy > p:not(.project-type) {
   color: rgba(255, 255, 255, 0.72);
-  font-size: clamp(1rem, 1.5vw, 1.18rem);
-  margin-top: 26px;
+  font-size: clamp(0.98rem, 1.28vw, 1.08rem);
+  margin-top: 20px;
   max-width: 720px;
 }
 
@@ -596,13 +596,13 @@ a {
   display: grid;
   gap: 10px;
   list-style-position: inside;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .project-links {
   display: flex;
   gap: 18px;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .project-links a {
@@ -622,20 +622,20 @@ a {
   color: var(--ink);
   display: grid;
   grid-template-rows: 1fr auto;
-  min-height: 650px;
+  min-height: 500px;
 }
 
 .score-panel {
   align-content: end;
   display: grid;
-  min-height: 360px;
-  padding: clamp(30px, 5vw, 58px);
+  min-height: 260px;
+  padding: clamp(26px, 4vw, 44px);
 }
 
 .score-panel span {
   display: block;
   font-family: var(--serif);
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(3.2rem, 6.4vw, 5.8rem);
   line-height: 0.9;
 }
 
@@ -655,8 +655,8 @@ a {
 
 .score-grid div {
   border-right: 1px solid var(--line);
-  min-height: 160px;
-  padding: 28px;
+  min-height: 124px;
+  padding: 24px;
 }
 
 .score-grid div:nth-child(2n) {
@@ -670,7 +670,7 @@ a {
 .score-grid strong {
   display: block;
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-size: clamp(1.75rem, 3.2vw, 2.8rem);
   font-weight: 400;
   line-height: 0.95;
 }
@@ -695,7 +695,7 @@ a {
 
 .contact-layout {
   display: grid;
-  gap: clamp(28px, 6vw, 90px);
+  gap: clamp(24px, 4.6vw, 64px);
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.56fr);
 }
 
