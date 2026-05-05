@@ -101,11 +101,6 @@
     grid-column: auto;
   }
 
-  .education-details {
-    justify-self: start;
-    text-align: left;
-  }
-
 }
 
 @media screen and (max-width: 560px) {
