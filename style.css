@@ -563,8 +563,15 @@ a {
   background: var(--white);
   border: 1px solid var(--line);
   display: grid;
-  gap: clamp(18px, 2.4vw, 28px);
+  gap: 14px;
   padding: clamp(30px, 4vw, 52px);
+}
+
+.education-time {
+  color: var(--raspberry);
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
 }
 
 .education-card h2 {
@@ -574,18 +581,25 @@ a {
   line-height: 0.98;
 }
 
-.education-card p {
-  color: var(--muted);
-  font-size: 0.82rem;
+.education-program {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 1.35vw, 1.16rem);
   font-weight: 850;
 }
 
-.education-details {
+.education-meta {
   border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
-  gap: 12px clamp(18px, 3vw, 34px);
+  gap: 10px clamp(18px, 3vw, 34px);
+  margin-top: 8px;
   padding-top: 18px;
+}
+
+.education-meta span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 850;
 }
 
 .project-section {
