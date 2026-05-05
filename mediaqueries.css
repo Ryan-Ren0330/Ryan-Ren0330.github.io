@@ -137,6 +137,7 @@
 
   .hero-actions,
   .contact-actions,
+  .paper-links,
   .project-links {
     display: grid;
     width: 100%;
