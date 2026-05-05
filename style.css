@@ -439,7 +439,29 @@ a {
 .paper-feature {
   border: 1px solid var(--line);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.34fr);
+  grid-template-columns: minmax(280px, 0.44fr) minmax(0, 1fr);
+}
+
+.paper-figure {
+  align-content: center;
+  border-right: 1px solid var(--line);
+  display: grid;
+  gap: 18px;
+  padding: clamp(26px, 4vw, 54px);
+}
+
+.paper-figure img {
+  background: #ffffff;
+  border: 1px solid rgba(16, 16, 16, 0.1);
+  width: 100%;
+}
+
+.paper-figure figcaption {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: clamp(1rem, 1.35vw, 1.3rem);
+  font-style: italic;
+  line-height: 1.22;
 }
 
 .paper-copy {
@@ -452,7 +474,7 @@ a {
 }
 
 .paper-copy h3 {
-  font-size: clamp(2.4rem, 5.2vw, 5.7rem);
+  font-size: clamp(2.1rem, 4.2vw, 4.8rem);
 }
 
 .paper-copy > p:not(.paper-venue):not(.paper-authors) {
@@ -486,19 +508,22 @@ a {
 }
 
 .paper-facts {
-  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 36px;
 }
 
 .paper-facts div {
   align-content: end;
   display: grid;
-  min-height: 180px;
-  padding: 28px;
+  min-height: 126px;
+  padding: 22px 24px 0 0;
 }
 
 .paper-facts div + div {
-  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  padding-left: 24px;
 }
 
 .paper-facts dt {
